@@ -1,0 +1,62 @@
+try:
+  mylist=[14, "hello", 967]
+  mylist[6]
+
+  print(mylist)
+except:
+  print("index error")
+
+try:
+  import Pandas
+  import NumPy
+except:
+  print("import error")
+
+try:
+  exec('Print"python errors"')
+except SyntaxError:
+  print("syntax error")
+
+try:
+  mydictionnary={True:"hello",False:"bye", '3':"python"}
+  mydictionnary['True']
+except:
+    print("key error")
+
+try:
+  exec("""
+  i=14
+  while i<78:
+  print(i)
+  i+=1  """)
+except IndentationError:
+  print("Indenation error")
+
+try:
+  it=iter([1,2,3])
+  next(it)
+  next(it)
+  next(it)
+  next(it)
+except:
+  print("StopIteration")
+
+try:
+  '15'+15
+except:
+  print("TypeError")
+
+try:
+  int('python')
+except:
+  print("ValueError")
+
+try:
+  python
+except:
+  print("NameError")
+
+try: 
+  x=19/0
+except:
+  print("ZeroDivisionError")
